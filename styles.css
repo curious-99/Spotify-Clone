@@ -49,10 +49,8 @@ nav ul li{
     width: 70%;
     border-radius: 12px;
     padding: 34px;
-    /* background-image: url(bg.jpg); */
-    /* idhar bt ho rha hai
-    means background image pure container me 100% nhi aa paa \rha hai */
     background-image: url(bg.jpg);
+    background-size:cover;
 }
 .bottom{
     position: sticky;
@@ -73,6 +71,7 @@ nav ul li{
 }
 #myProgressBar{
     width: 80vw;
+    cursor: pointer;
 }
 .songItemContainer{
     margin-top: 74px;
@@ -101,10 +100,11 @@ nav ul li{
     cursor: pointer;
 }
 .songInfo{
+    font-family: 'Varela Round', sans-serif;
     position: absolute;
     left: 10vw;
 }
 .songInfo img{
     opacity: 0;
-    transition: opacity 1s ease-in;
+    transition: opacity 0.4s ease-in;
 }
