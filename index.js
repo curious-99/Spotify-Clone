@@ -37,9 +37,13 @@ masterPlay.addEventListener('click',()=>{
 
 //Listen to events
 audioElement.addEventListener('timeupdate',()=>{
-    console.log('timeupdate');
+    // console.log('timeupdate');
     //update Seekbar
     progress = parseInt((audioElement.currentTime/audioElement.duration)*100);
-    console.log(progress);
-    myProgreeBar.value = progress;
+    // console.log(progress);
+    myProgressBar.value = progress;
+})
+
+myProgressBar.addEventListener('change',()=>{
+    audioElement.currentTime = ( myProgressBar.value* audioElement.duration)/100;
 })
