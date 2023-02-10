@@ -5,16 +5,27 @@ let audioElement = new Audio('songs/1.mp3');
 let masterPlay= document.getElementById('masterPlay');
 let myProgreebar= document.getElementById('myProgreebar');
 let gif= document.getElementById('gif');
+let songItems = Array.from(document.getElementsByClassName('songItem'));
 // audioElement.play();
 
 
 let songs = [
     {songName:"Jai Shree Ram", filePath: "songs/1.mp3", coverPath: "covers/1.jpg"},
-    {songName:"Jai Shree Ram", filePath: "songs/1.mp3", coverPath: "covers/1.jpg"},
-    {songName:"Jai Shree Ram", filePath: "songs/1.mp3", coverPath: "covers/1.jpg"},
-    {songName:"Jai Shree Ram", filePath: "songs/1.mp3", coverPath: "covers/1.jpg"},
-    {songName:"Jai Shree Ram", filePath: "songs/1.mp3", coverPath: "covers/1.jpg"},
+    {songName:"Cielo - Huma-Huma", filePath: "songs/2.mp3", coverPath: "covers/2.jpg"},
+    {songName:"DEAF KEV - Invincible ", filePath: "songs/3.mp3", coverPath: "covers/3.jpg"},
+    {songName:"Different Heaven & EH!DE - My Heart ", filePath: "songs/4.mp3", coverPath: "covers/4.jpg"},
+    {songName:"Janji-Heroes-Tonight-feat-Johnning", filePath: "songs/5.mp3", coverPath: "covers/5.jpg"},
+    {songName:"Jai Shree Ram", filePath: "songs/6.mp3", coverPath: "covers/6.jpg"},
+    {songName:"Jai Shree Ram", filePath: "songs/7.mp3", coverPath: "covers/7.jpg"},
+    {songName:"Jai Shree Ram", filePath: "songs/8.mp3", coverPath: "covers/8.jpg"},
+    {songName:"Jai Shree Ram", filePath: "songs/9.mp3", coverPath: "covers/9.jpg"},
 ]
+
+songItems.forEach((element,i)=>{
+    console.log(element,i);
+    element.getElementsByTagName("img")[0].src = songs[i].coverPath;
+    element.getElementsByClassName("songName")[0].innerText = songs[i].songName;
+})
 
 // audioElement.play();
 
