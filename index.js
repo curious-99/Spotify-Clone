@@ -10,7 +10,7 @@ let songItems = Array.from(document.getElementsByClassName('songItem'));
 
 
 let songs = [
-    {songName:"Jai Shree Ram", filePath: "songs/1.mp3", coverPath: "covers/1.jpg"},
+    {songName:"Warriyo - Mortals [NCS Release]", filePath: "songs/1.mp3", coverPath: "covers/1.jpg"},
     {songName:"Cielo - Huma-Huma", filePath: "songs/2.mp3", coverPath: "covers/2.jpg"},
     {songName:"DEAF KEV - Invincible ", filePath: "songs/3.mp3", coverPath: "covers/3.jpg"},
     {songName:"Different Heaven & EH!DE - My Heart ", filePath: "songs/4.mp3", coverPath: "covers/4.jpg"},
